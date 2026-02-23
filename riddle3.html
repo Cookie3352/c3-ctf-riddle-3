@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crossing</title>
+    <style>
+        /* Sleek, Industrial Aesthetic */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1c1e; /* Steel grey-black */
+            color: #b0b3b8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* The "Silver Door" Container */
+        .riddle-box {
+            position: relative;
+            padding: 3rem;
+            border-left: 4px solid #8e9aaf; /* Silver accent */
+            background: linear-gradient(90deg, #23272a 0%, #1a1c1e 100%);
+            box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+            max-width: 600px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+            transition: all 0.5s ease;
+        }
+
+        /* Indentation for flow */
+        .flow-line {
+            padding-left: 30px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        /* Subtle "Up and Down" animation on hover */
+        .riddle-box:hover p {
+            transform: translateY(-2px);
+            color: #cbd5e1;
+            text-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+
+        /* Decorative "Elevator" indicator */
+        .indicator {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 0.7rem;
+            color: #4ade80; /* "Floor reached" Green */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="riddle-box">
+        <div class="indicator">▲ Riddle</div>
+        <p>Where silver doors part, yet some stay sealed,</p>
+        <p>And silent panes guard what’s concealed,</p>
+        <p>While shelves nearby serve small lifelines.</p>
+        <p class="flow-line">A crossing restless, wide and slow,</p>
+        <p class="flow-line">Where up and down in currents flow</p>
+    </div>
+
+</body>
+</html>
